@@ -1,25 +1,31 @@
 export const travels = [
     {
-        image: 'https://images-na.ssl-images-amazon.com/images/I/51Uf7cBeMNL._AC_.jpg',
-        name: 'Cat game',
-        price: 10,
-        shortDescription: 'Lorem ipsum dolor ut labore et dolore magna aliqua',
+        image: '../../assets/img/1.jpg',
+        destination: 'Almuñécar',
+        land: 'Spain',
+        startDate:' 20.04.2021',
+        duration: '10 Days',
+        price: 100,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.'
     },
 
     {
-        image: 'https://schnauzerl.com/media/image/product/25122/lg/naturkratzbaum-holz~3.jpg',
-        name: 'Scratching tree',
-        price: 120,
-        shortDescription: 'Congue quisque egestas diam in arcu',
+        image: '../../assets/img/2.jpg',
+        destination: 'Cavtat',
+        land: 'Croatia',
+        startDate: '12.06.2021',
+        duration: '3 Days',
+        price: 50,
         description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     },
 
     {
-        image: 'https://www.herold.at/blog/wp-content/uploads/2017/06/Katzenfutter-232336206.jpg?x39441',
-        name: 'Premium cat food',
-        price: 5.20,
-        shortDescription: 'Sit amet porttitor eget dolor morbi non arcu risus quis',
+        image: '../../assets/img/3.jpg',
+        destination: 'Warwick',
+        land: 'United Kingdom',
+        startDate: '03.07.2021',
+        duration: '5 Days',
+        price: 40,
         description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     }
 ];

@@ -1,0 +1,24 @@
+<div class="container my-4 bg-white">
+    <h2 class="m-0 py-3 text-center">My Basket</h2>
+    <div *ngFor="let item of items" class="box row py-3 px-2 border-bottom align-items-baseline">
+        <div class="image col-2 p-0">
+            <img src="{{item.image}}" alt="">
+        </div>
+        <div class="col-3 title h6 text-center fs-4 fw-bold">{{ item.destination }}, {{ item.land }}</div>
+        <div class="col-3 px-3 fs-7">Start at {{ item.startDate }}</div>
+        <div class="col-3 px-3 fs-7">Price: {{item.price.toFixed(2) | currency}}</div>
+    </div>
+
+    <div *ngIf="items != 0; else other_content">
+        <div class="col-3 px-0 fs-7 my-4">Total items: {{basketLength}}</div>
+        <div class="col-3 px-0 fs-7 my-4">Total preis: {{price.toFixed(2) | currency}}</div>
+        <div *ngIf="price > 200 && price < 500" class="col-3 px-0 fs-7 my-4">Discount price (-10%): {{price.toFixed(2)* 0.9 | currency}}</div>
+        <div *ngIf="price > 500" class="col-3 px-0 fs-7 my-4">Discount price (-25%): {{price.toFixed(2)* 0.75 | currency}}</div>
+        <button class="button col-3 bg-primary border-0 my-4 text-white py-2" type="submit" (click)="onSubmit()">Purchase</button>
+    </div>
+
+    <ng-template #other_content>
+        <div class="row bg-white m-0 py-4">Your basket is empty</div>
+    </ng-template>
+</div>
+

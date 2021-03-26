@@ -7,6 +7,8 @@ import { TravelsComponent } from './travels/travels.component';
 
 import { TravelDetailsComponent } from './travel-details/travel-details.component';
 
+import { BasketComponent } from './basket/basket.component';
+
 const routes: Routes = [
   {
     path: "", component: HomeComponent
@@ -19,6 +21,9 @@ const routes: Routes = [
   },
   {
     path: 'travels/:travelId', component: TravelDetailsComponent
+  },
+  {
+    path: 'basket', component: BasketComponent
   }
 ];
 

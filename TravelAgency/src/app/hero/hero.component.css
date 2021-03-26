@@ -7,3 +7,10 @@
     background: url(../../assets/img/banner10.jpg) top no-repeat;
     background-size: cover;
 }
+
+h1 {
+    font-family: 'Georgia';
+    font-weight: 600;
+    font-size: 3rem;
+    width: 40%;
+}

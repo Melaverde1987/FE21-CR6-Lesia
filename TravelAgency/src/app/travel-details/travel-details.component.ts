@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ActivatedRoute } from '@angular/router';
+
 import { travels } from '../travels';
+import { BasketService } from '../basket.service';
 
 @Component({
   selector: 'travel-details',
@@ -11,7 +13,11 @@ import { travels } from '../travels';
 export class TravelDetailsComponent implements OnInit {
   travels: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private basketService: BasketService) { }
+
+  addToBasket(travels) {
+    this.basketService.addToBasket(travels);
+  }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
