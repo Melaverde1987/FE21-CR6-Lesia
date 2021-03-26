@@ -25,7 +25,7 @@ export class BasketService {
   doSum() {
     let totalPrice: number = 0;
     this.items.forEach(value => totalPrice += value.price);
-    console.log(totalPrice);
+    //console.log(totalPrice);
     return totalPrice;
   }
 
