@@ -1,16 +1,21 @@
 <div class="container my-4">
     <div class="row">
-        <div *ngFor="let value of travels; index as travelId" class="col col-4 mb-4">
+        <h2 class="m-0 py-5 text-center">Travel Offers</h2>
+        <div *ngFor="let value of travels; index as travelId" class="col col-12 col-md-6 col-lg-4 mb-4">
             <!-- begin of loop -->
-            <a routerLink="{{travelId}}" class="box">
+            <div class="box card">
                 <div class="image">
                     <img src="{{value.image}}" alt="">
                 </div>
-                <div class="title h5 mt-4 text-center fs-4 fw-bold">{{value.destination}}, {{ value.land }}</div>
-                <div class="px-3 fs-7 my-4">{{ value.startDate }}</div>
-                <div class="px-3 fs-7 my-4">{{ value.duration }}</div>
-                <div class="px-3 fs-7 my-4 text-end fw-bold">Price: {{value.price.toFixed(2)}}</div>
-            </a>
+                <div>
+                    <div class="title h5 my-4 text-center fs-5 fw-bold">{{value.destination}}, {{ value.land }}</div>
+                    <div class="px-3 fs-7 my-2">Begin: {{ value.startDate }}</div>
+                    <div class="px-3 fs-7 my-2">Duration: {{ value.duration }}</div>
+                    
+                    <div class="px-3 fs-7 my-4 fw-bold">Price: {{value.price.toFixed(2)}}</div>
+                    <a routerLink="{{travelId}}" class="card-footer text-muted text-center">More</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

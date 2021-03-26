@@ -12,6 +12,19 @@ a {
 .box {
   height: 100%;
   background-color: white !important;
-  cursor: pointer;
 }
+
+.image {
+  overflow: hidden;
+}
+
+  .image img {
+    transition: transform 5s;
+    transition-timing-function: ease-out;
+  }
+
+
+  .image img:hover {
+    transform: scale(1.1); 
+  }
 

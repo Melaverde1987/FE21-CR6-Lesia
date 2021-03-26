@@ -1,19 +1,26 @@
 <div class="container my-4">
     <div class="row">
-        <h2 class="bg-white m-0 py-3 text-center">Travel Details</h2>
+        <h2 class="m-0 py-5 text-center">Travel Details</h2>
         <div *ngIf="travels" class="col col-12 mb-4">
             <div class="box row">
                 <div class="image col-6 p-0">
                     <img src="{{travels.image}}" alt="">
                 </div>
-                <div class="col-6">
-                    <div class="title h5 mt-4 text-center fs-4 fw-bold">{{ travels.destination }}, {{ travels.land }}</div>
-                    <div class="px-3 fs-7 my-4">{{ travels.startDate }}</div>
-                    <div class="px-3 fs-7 my-4">{{ travels.duration }}</div>
+                <div class="col-6 py-3">
+                    <div class="px-3 title h5 mb-4 fs-4 fw-bold">{{ travels.destination }}, {{ travels.land }}</div>
+                    <div class="px-3 fs-7 my-4">Begin: {{ travels.startDate }}</div>
+                    <div class="px-3 fs-7 my-4">Duration: {{ travels.duration }}</div>
                     <div class="px-3 fs-7 my-4">{{ travels.description }}</div>
-                    <div class="px-3 fs-7 my-4 text-end"><span class='badge my_badge py-3 px-4'>Price:
-                            {{travels.price.toFixed(2) | currency}}</span></div>
-                    <button class="bg-primary text-white p-3 col-12 border-0 mb-3"
+                    <div class="px-3 fs-7 my-4">
+                        <figure>
+                            <blockquote class="blockquote">{{travels.userFeedback}}</blockquote>
+                            <figcaption class="blockquote-footer text-end">
+                                <cite title="Source Title">{{travels.userName}}</cite>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="px-3 fs-7 my-4 text-end fw-bold">Price: {{travels.price.toFixed(2) | currency}}</div>
+                    <button class="btn bg-white border border-dark text-dark p-3 col-12"
                         (click)="addToBasket(travels)">Buy</button>
                 </div>
             </div>

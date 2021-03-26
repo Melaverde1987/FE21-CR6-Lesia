@@ -1,6 +1,8 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { BasketService } from '../basket.service';
+
 
 @Component({
   selector: 'navbar',
@@ -8,15 +10,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css'],
   template: 'The href is: {{href}}'
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit, DoCheck {
 
   home: string;
   blog: string;
   travels: string;
+  basketLength;
   
   href: string = "";
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private basketService: BasketService) {
     this.home = 'Home';
     this.blog = 'Blog';
     this.travels = 'Travels';
@@ -28,6 +31,7 @@ export class NavbarComponent implements OnInit {
   ngDoCheck() {
     this.href = this.router.url;
     console.log(this.router.url);
+    this.basketLength = this.basketService.itemsLength();
   }
 
 }

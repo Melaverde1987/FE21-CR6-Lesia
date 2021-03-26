@@ -10,11 +10,11 @@
     </div>
 
     <div *ngIf="items != 0; else other_content">
-        <div class="col-3 px-0 fs-7 my-4">Total items: {{basketLength}}</div>
-        <div class="col-3 px-0 fs-7 my-4">Total preis: {{price.toFixed(2) | currency}}</div>
-        <div *ngIf="price > 200 && price < 500" class="col-3 px-0 fs-7 my-4">Discount price (-10%): {{price.toFixed(2)* 0.9 | currency}}</div>
-        <div *ngIf="price > 500" class="col-3 px-0 fs-7 my-4">Discount price (-25%): {{price.toFixed(2)* 0.75 | currency}}</div>
-        <button class="button col-3 bg-primary border-0 my-4 text-white py-2" type="submit" (click)="onSubmit()">Purchase</button>
+        <div class="col-3 px-0 fs-7 my-4"><span class="fw-bold">Total items:</span> {{basketLength}}</div>
+        <div class="col-3 px-0 fs-7 my-4"><span class="fw-bold">Total preis:</span> {{price.toFixed(2) | currency}}</div>
+        <div *ngIf="price > 200 && price < 500" class="col-3 px-0 fs-7 my-4"><span class="fw-bold">Discount price (-10%):</span> {{price.toFixed(2)* 0.9 | currency}}</div>
+        <div *ngIf="price > 500" class="col-3 px-0 fs-7 my-4"><span class="fw-bold">Discount price:</span> (-25%): {{price.toFixed(2)* 0.75 | currency}}</div>
+        <button class="btn bg-white border border-dark text-dark col-3 bg-primary my-4 py-2" type="submit" (click)="onSubmit()">Purchase</button>
     </div>
 
     <ng-template #other_content>

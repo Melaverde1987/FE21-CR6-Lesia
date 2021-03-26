@@ -1,0 +1,17 @@
+blockquote {
+    line-height: 1;
+}
+
+blockquote::before {
+  content: '« '; 
+  font-family: FontAwesome;
+  font-size: 2rem;
+  color: rgb(160, 160, 160);
+}
+
+blockquote::after {
+  content: ' »'; 
+  font-family: FontAwesome;
+  font-size: 2rem;
+  color: rgb(160, 160, 160);
+}
