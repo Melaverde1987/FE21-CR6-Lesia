@@ -13,3 +13,10 @@ button {
         top: -0.9rem;
         right: -1rem;
     }
+
+@media (max-width: 991.98px) { 
+    .navbar_dark {
+        background-color: rgb(83, 83, 83);
+    }
+    
+}

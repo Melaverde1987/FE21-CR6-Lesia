@@ -8,7 +8,7 @@ import { BasketService } from '../basket.service';
   selector: 'navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
-  template: 'The href is: {{href}}'
+  template: 'The href is: {{href}}' //find url for adding class for home
 })
 export class NavbarComponent implements OnInit, DoCheck {
 
