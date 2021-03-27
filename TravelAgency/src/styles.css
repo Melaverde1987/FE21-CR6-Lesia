@@ -3,3 +3,13 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+.my_bg {
+  background-color: rgb(13 173 151);
+}
+
+.my_color {
+  color: rgb(13 173 151);
+}
+
+

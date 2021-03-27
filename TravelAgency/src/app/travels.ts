@@ -12,6 +12,18 @@ export const travels = [
     },
 
     {
+        image: '../../assets/img/4.jpg',
+        destination: 'Rome',
+        land: 'Italy',
+        startDate: '08.06.2021',
+        duration: '7 Days',
+        userFeedback: 'At volutpat diam ut venenatis tellus in. Aliquet eget sit amet tellus',
+        userName: 'Justin',
+        price: 80,
+        description: 'Commodo odio aenean sed adipiscing diam donec. Maecenas ultricies mi eget mauris pharetra. Enim tortor at auctor urna nunc id. Orci eu lobortis elementum nibh tellus. Urna nunc id cursus metus. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Vitae auctor eu augue ut lectus arcu bibendum at. Velit dignissim sodales ut eu sem integer vitae. Aenean vel elit scelerisque mauris pellentesque. Sit amet consectetur adipiscing elit pellentesque habitant morbi. '
+    },
+
+    {
         image: '../../assets/img/2.jpg',
         destination: 'Cavtat',
         land: 'Croatia',
@@ -33,18 +45,6 @@ export const travels = [
         userName: 'Anne',
         price: 40,
         description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-    },
-
-    {
-        image: '../../assets/img/4.jpg',
-        destination: 'Rome',
-        land: 'Italy',
-        startDate: '08.06.2021',
-        duration: '7 Days',
-        userFeedback: 'At volutpat diam ut venenatis tellus in. Aliquet eget sit amet tellus',
-        userName: 'Justin',
-        price: 80,
-        description: 'Commodo odio aenean sed adipiscing diam donec. Maecenas ultricies mi eget mauris pharetra. Enim tortor at auctor urna nunc id. Orci eu lobortis elementum nibh tellus. Urna nunc id cursus metus. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Vitae auctor eu augue ut lectus arcu bibendum at. Velit dignissim sodales ut eu sem integer vitae. Aenean vel elit scelerisque mauris pellentesque. Sit amet consectetur adipiscing elit pellentesque habitant morbi. '
     },
 
     {
